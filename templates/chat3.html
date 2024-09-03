@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symptom to Disease</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='chat3.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Symptom to Disease</h1>
+        <form method="POST" action="/predict" enctype="multipart/form-data">
+            <label for="symptoms">Enter Symptoms (Max 200 words):</label>
+            <textarea id="symptoms" name="symptoms" rows="6" maxlength="200" required></textarea>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image">
+            <br>
+            <button type="submit">Predict</button>
+        </form>
+
+        <!-- This is where the prediction will be displayed -->
+        <h2>Symptoms:</h2>
+        <p>{{ symptoms }}</p>
+        <h2>Prediction:</h2>
+        <p>{{ prediction }}</p>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Change this to set the background color of the page */
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-blue-genetic-dna-medical-background-windbackground-display-boardbackgroundpsdcolorful-image_77077.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff; /* Change this to set the background color of the container */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* width: 50%; */
+}
+
+.main-title {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+/* #predict-button{
+    /* padding: 20px; */
+    
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Change this to set the background color of the button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px; 
+}
+
+button:hover {
+    background-color: #0056b3; /* Change this to set the background color on hover */
+}
